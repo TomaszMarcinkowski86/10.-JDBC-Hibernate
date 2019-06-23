@@ -33,7 +33,7 @@ public class Customer {
     private Set<String> nickname=new HashSet<String>();
 
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER) // fetchType EAGER oznacza że jak bedziemy szukać cusomera to zamówienia też będą zaciągane
     private List<Order> orders;
 
     @Embedded
