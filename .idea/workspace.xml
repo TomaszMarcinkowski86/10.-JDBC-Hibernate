@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a434787c-bfff-40c5-8bda-6542bf3d7bde" name="Default Changelist" comment=" //todo find">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JpaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Ebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/OrderLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/JpaMain2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcjpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcjpa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/CustomerStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/CustomerStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JdbcMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jdbc/JdbcMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/sda/jdbcjpa/JdbcMain.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,22 +56,16 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sdajpa@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sdajpa: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sdajpa@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sdajpa: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="cart: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="yyy/Hibernate" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="jdbcjpa" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,13 +115,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JpaMain">
+  <component name="RunManager" selected="Application.JpaMain2">
     <configuration name="JdbcMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.sda.jdbcjpa.JdbcMain" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.jdbcjpa.jdbc.JdbcMain" />
       <module name="jdbcjpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.sda.jdbcjpa.*" />
+          <option name="PATTERN" value="pl.sda.jdbcjpa.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +130,24 @@
       </method>
     </configuration>
     <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.sda.jdbcjpa.JpaMain" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.jdbcjpa.jpa.JpaMain" />
       <module name="jdbcjpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.sda.jdbcjpa.*" />
+          <option name="PATTERN" value="pl.sda.jdbcjpa.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JpaMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.sda.jdbcjpa.jpa2.JpaMain2" />
+      <module name="jdbcjpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.jdbcjpa.jpa2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,6 +157,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JpaMain2" />
         <item itemvalue="Application.JpaMain" />
         <item itemvalue="Application.JdbcMain" />
       </list>
@@ -140,27 +170,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55b966bc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4132addf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55b966bc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@75e57843" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55b966bc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@34ee26cc" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55b966bc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5f09d1db" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55b966bc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@30ac1609" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4132addf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@18e543ea" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -179,7 +194,8 @@
       <option name="presentableId" value="Default" />
       <updated>1561199242683</updated>
       <workItem from="1561273439031" duration="51000" />
-      <workItem from="1561273511834" duration="20258000" />
+      <workItem from="1561273511834" duration="20289000" />
+      <workItem from="1561791759053" duration="19080000" />
     </task>
     <task id="LOCAL-00001" summary="        statement();&#10;        prepareStatement();&#10;        callableStatement();&#10;        prepareStatement2();">
       <created>1561203359228</created>
@@ -195,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561295905093</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="23.06">
+      <created>1561298068585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561298068585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,21 +252,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
     <MESSAGE value="        statement();&#10;        prepareStatement();&#10;        callableStatement();&#10;        prepareStatement2();" />
     <MESSAGE value="23.06" />
-    <option name="LAST_COMMIT_MESSAGE" value="23.06" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JpaMain.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="29-06-2019 JPA Ciag dalszy" />
+    <option name="LAST_COMMIT_MESSAGE" value="29-06-2019 JPA Ciag dalszy" />
   </component>
   <component name="masterDetails">
     <states>

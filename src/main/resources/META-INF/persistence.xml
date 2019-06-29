@@ -4,18 +4,18 @@
              version="2.0">
 
 <!--    konfiguracja dostępu do bazy danych dla JPA-->
-    <persistence-unit name="yyy">
+    <persistence-unit name="yyy"> <!--   nazwa konfiguracji których może być wiele-->
         <provider>
             org.hibernate.jpa.HibernatePersistenceProvider
         </provider>
-        <class>pl.sda.jdbcjpa.Customer</class>
+        <class>pl.sda.jdbcjpa.jpa.Customer</class>
         <properties>
             <property name = "hibernate.direct" value ="org.hibernate.dialect.MySQL57Dialect"/>
 <!--            w jakim języku będziemy mówili do bazy danych-->
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="Nerek0jeden" />
-            <property name="javax.persistence.jdbc.url" value = "jdbc:mysql://localhost:3306/sdajpa?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.url" value = "jdbc:mysql://localhost:3306/sdajpa?useUnicode=true&amp;serverTimezone=UTC"/>
             <property name="connection.autocommit" value="true"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
