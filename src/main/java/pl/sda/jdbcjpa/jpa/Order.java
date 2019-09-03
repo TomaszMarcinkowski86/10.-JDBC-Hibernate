@@ -1,26 +1,27 @@
-package pl.sda.jdbcjpa;
+package pl.sda.jdbcjpa.jpa;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import pl.sda.jdbcjpa.BaseEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor //bezpzraetrowy konstruktor
 @Table(name = "Orders")
-public class Order {
+@ToString(exclude = "customer")
+public class Order extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id; // duży int musi być
  //   private Integer value;
     private BigDecimal totalCost;
     private String customerName;
+
+    @OneToMany (mappedBy = "orderHeader" , cascade = CascadeType.PERSIST)
+    private List<OrderLine> orderLines;
 
     @ManyToOne
     private Customer customer;

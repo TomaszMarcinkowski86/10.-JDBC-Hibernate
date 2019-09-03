@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a434787c-bfff-40c5-8bda-6542bf3d7bde" name="Default Changelist" comment=" //todo find">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JpaDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Book.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Ebook.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/OrderLine.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/JpaMain2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa2/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcjpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcjpa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/CustomerStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/CustomerStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JdbcMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jdbc/JdbcMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/jdbcjpa/jpa/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sda/jdbcjpa/JdbcMain.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +65,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="jdbcjpa/invalid/JPA" />
+    </ignored-facets>
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -95,7 +87,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Programowanie2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -115,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JpaMain2">
+  <component name="RunManager" selected="Application.JpaMain">
     <configuration name="JdbcMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.sda.jdbcjpa.jdbc.JdbcMain" />
       <module name="jdbcjpa" />
@@ -157,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JpaMain2" />
         <item itemvalue="Application.JpaMain" />
+        <item itemvalue="Application.JpaMain2" />
         <item itemvalue="Application.JdbcMain" />
       </list>
     </recent_temporary>
@@ -195,7 +187,11 @@
       <updated>1561199242683</updated>
       <workItem from="1561273439031" duration="51000" />
       <workItem from="1561273511834" duration="20289000" />
-      <workItem from="1561791759053" duration="19080000" />
+      <workItem from="1561791759053" duration="19101000" />
+      <workItem from="1561897663052" duration="52000" />
+      <workItem from="1566631528549" duration="36000" />
+      <workItem from="1566632667923" duration="4836000" />
+      <workItem from="1566716687592" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="        statement();&#10;        prepareStatement();&#10;        callableStatement();&#10;        prepareStatement2();">
       <created>1561203359228</created>
@@ -218,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561298068585</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="29-06-2019 JPA Ciag dalszy">
+      <created>1561813399236</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561813399236</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

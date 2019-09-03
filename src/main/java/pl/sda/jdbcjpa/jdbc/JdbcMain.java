@@ -1,6 +1,7 @@
-package pl.sda.jdbcjpa;
+package pl.sda.jdbcjpa.jdbc;
 
 import javax.persistence.EntityManager;
+import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,14 +9,36 @@ import java.util.List;
 
 public class JdbcMain {
     public static void main(String[] args) {
-        statement();
-        prepareStatement();
-        callableStatement();
-        prepareStatement2();
-        System.out.println(findEmployeeBySalaryRange(500, 2500));
-        sqlInjectionStatement("KING");
-        //hakowanie sql
+//        statement();
+//        prepareStatement();
+//        callableStatement();
+//        prepareStatement2();
+//        System.out.println(findEmployeeBySalaryRange(500, 2500));
+//        sqlInjectionStatement("KING");
+       //hakowanie sql
        // sqlInjectionStatement("KING'; delete from sdajdbc.employee where empno = 7369; -- ");
+
+        addPayout(new BigDecimal(500));
+    }
+
+    private static void addPayout(BigDecimal ammount) {
+        String query = "UPDATE sdajdbc.employee SET total_payouts = COALESCE(total_payouts, 0)+ ?";
+// to poniżej druga gorsza opcja
+ //        try {
+//            Connection connection = getConnection();
+//        } plus jeszcze
+//                finally getConnection().close();{
+//             i kolejny
+//        }
+
+        try(Connection connection = getConnection()){ // to się samo zamyka i jest ładne (try with resurces)
+            PreparedStatement preparedStatement  = connection.prepareStatement(query);
+            preparedStatement.setBigDecimal(1,ammount);
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private static void prepareStatement2() {
@@ -43,6 +66,7 @@ public class JdbcMain {
         }
     }
 
+    //to wykorzystuje procedury
     private static void callableStatement() {
         try(Connection connection = getConnection()){
             String query="{call sdajdbc.getName(?,?)}";
@@ -104,12 +128,16 @@ public class JdbcMain {
     private static Connection getConnection() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "Nerek0jeden");
+                    "jdbc:mysql://localhost:3306?" +
+                            "useUnicode=true&" +
+                            "serverTimezone=UTC", "root", "Nerek0jeden");
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
     }
+
+    // jest możliwy do scashowania. mogą się zapytania szybciej wykonywać.
     public static List<String> findEmployeeBySalaryRange(int salaryMin, int salaryMax) {
         List<String> employees = new ArrayList<>();
         String query = "SELECT empno, ename, sal FROM sdajdbc.employee WHERE sal > ? " +
@@ -132,7 +160,7 @@ public class JdbcMain {
         return employees;
     }
 
-
+//bez zabazpieczenia przed sql injection,
     private static void sqlInjectionStatement(String firstName) {
         try (Connection connection = getConnection()) {
             String query = "select ename, job, sal " +

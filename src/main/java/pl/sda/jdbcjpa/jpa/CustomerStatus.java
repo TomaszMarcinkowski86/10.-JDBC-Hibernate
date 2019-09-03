@@ -1,4 +1,4 @@
-package pl.sda.jdbcjpa;
+package pl.sda.jdbcjpa.jpa;
 
 public enum CustomerStatus {
     RMOVED,
